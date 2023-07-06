@@ -362,7 +362,7 @@
                 </address>
             </div>
             <div class="footer-social">
-                <p class="footer-social-title">приєднуйтесь</p>
+                <p class="footer-block-title">приєднуйтесь</p>
                 <ul class="no-list-marker social-link-items">
                     <li>
                         <a href="" class="social-link">
@@ -395,6 +395,11 @@
                     
                 </ul>
             </div>
+
+            <div class="footer-link-mailing">
+                <p class="footer-block-title">Підпишіться на розсилку</p>
+
+            </div>
             
         </div>
     </footer>
@@ -407,7 +412,29 @@
                     <use href="./images/icons.svg#close"></use>
                 </svg>
             </button>
-        </div>
+            <strong class="modal-title">Залиште свої дані, ми вам передзвонимо</strong>
+            <form>
+                <label class="modal-subtitle" for="user-name">Ім'я</label>
+                    <input class="modal-user-data" type="text" name="name" id="user-name">
+                <label class="modal-subtitle" for="user-phone">Телефон</label>
+                    <input class="modal-user-data" type="tel" name="phone" id="user-phone">
+                <label class="modal-subtitle" for="user-email">Пошта</label>
+                    <input class="modal-user-data" type="email" name="email" id="user-email">
+
+                <label class="modal-subtitle" for="user-comment">Коментар</label>
+                    <textarea class="modal-user-comment" name="comment" id="user-comment" placeholder="Введіть текст"></textarea>
+                
+                <input type="checkbox" name="policy-accept" id="user-policy-accept" class="checkbox-policy-accept visually-hidden">
+                    <label class="form-checkbox-policy-accept" for="user-policy-accept">Погоджуюся з розсилкою та приймаю&nbsp; 
+                        <a href="" class="link-policy">Умови договору</a>
+                    </label>
+
+            </form>
+
+
+            <button type="submit" class="submit-btn">Відправити</button>
+
+        </div>        
     </div>  
 
     <script src="./js/modal.js"></script>
